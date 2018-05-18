@@ -27,12 +27,11 @@
     "build": "rollup --config rollup.config.js",
     "doc": "documentation readme src/ol-layerswitcher.js --section=API"
   },
-  "peerDependencies": {
-    "ol": ">4.0.1"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
+    "documentation": "^5.3.5",
     "expect.js": "~0.3.1",
     "jquery": "~1.11.1",
     "lodash": "~2.4.1",
@@ -40,7 +39,9 @@
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^7.0.0",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "documentation": "^5.3.5"
+    "rollup-plugin-node-resolve": "^2.0.0"
+  },
+  "dependencies": {
+    "ol": "^5.0.0-beta.13"
   }
 }

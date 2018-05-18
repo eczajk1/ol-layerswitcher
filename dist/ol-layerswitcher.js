@@ -1,7 +1,7 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('ol/control/control'), require('ol/observable')) :
-	typeof define === 'function' && define.amd ? define(['ol/control/control', 'ol/observable'], factory) :
-	(global.LayerSwitcher = factory(global.ol.control.Control,global.ol.Observable));
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('ol/control/Control'), require('ol/Observable')) :
+	typeof define === 'function' && define.amd ? define(['ol/control/Control', 'ol/Observable'], factory) :
+	(global.LayerSwitcher = factory(global.Control,global.Observable));
 }(this, (function (Control,Observable) { 'use strict';
 
 Control = 'default' in Control ? Control['default'] : Control;
